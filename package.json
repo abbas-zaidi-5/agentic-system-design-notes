@@ -1,0 +1,18 @@
+{
+  "name": "agentic-system-design-notes",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A vendor-neutral field guide for bounded, observable, and testable AI agents.",
+  "scripts": {
+    "check": "npm run lint && npm run links",
+    "lint": "markdownlint-cli2",
+    "links": "node scripts/check-local-links.mjs"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "0.23.2"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

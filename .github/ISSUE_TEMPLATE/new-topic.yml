@@ -1,0 +1,36 @@
+name: Propose a topic
+description: Suggest a focused addition to the field guide.
+title: "[Topic]: "
+labels: ["enhancement"]
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+      placeholder: Sandboxed code execution
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: Engineering need
+      description: Which design decision or production risk should this help readers handle?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Proposed scope and non-goals
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and references
+      description: Prefer primary sources, standards, reproducible examples, or operational experience.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Contribution
+      options:
+        - label: I am willing to help draft or review this topic.

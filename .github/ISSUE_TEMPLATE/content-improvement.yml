@@ -1,0 +1,36 @@
+name: Content improvement
+description: Correct or strengthen an existing note.
+title: "[Content]: "
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for helping make the guidance more precise and useful.
+  - type: input
+    id: location
+    attributes:
+      label: Page or section
+      placeholder: docs/security/tool-permissions.md#capability-model
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is unclear, incomplete, or incorrect?
+      description: Describe the engineering impact, not only a wording preference.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+      description: Include relevant trade-offs, evidence, or references.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Safety check
+      options:
+        - label: This issue contains no credentials, private incident data, or unredacted personal information.
+          required: true
